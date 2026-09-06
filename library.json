@@ -1,0 +1,24 @@
+{
+  "name": "ArduinoCore-API",
+  "version": "0.1.0",
+  "description": "stm32duino ArduinoCore-API packaged for PlatformIO native test environments",
+  "keywords": "arduino, stm32duino, core, api, hal, testing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ademuri/ArduinoCore-API.git"
+  },
+  "license": "LGPL-2.1-or-later",
+  "frameworks": "*",
+  "platforms": "native",
+  "build": {
+    "includeDir": ".",
+    "srcFilter": [
+      "+<Common.cpp>",
+      "+<api/Common.cpp>"
+    ],
+    "flags": [
+      "-DHOST"
+    ]
+  }
+}
+
